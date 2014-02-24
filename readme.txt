@@ -16,9 +16,9 @@ With the Ultimate Under Construction plugin you are able to turn on a holding pa
 This Under Construction plugin allows for many levels of customisation, with millions of solid background colours to choose from, Patterned background and even a region to allow more advanced users to enter a completely custom block of HTML complete with styling there really are no limitations to what you can create.
 
 == Screenshots ==
-1. Example Page - This is an example of what the holding page can look like, this is using the Darkbind patterned background
-2. Options Page 1 - This is the top half of the options page, this shows the bulk of the options
-3. Options Page 2 - This is the bottom half of the options page, here you can see the colour selector for the Solid Background option.
+1. This is an example of what the holding page can look like, this is using the Darkbind patterned background
+2. This is the top half of the options page, this shows the bulk of the options
+3. This is the bottom half of the options page, here you can see the colour selector for the Solid Background option.
 
 == Installation ==
 1. Upload the folder to the `/wp-content/plugins/` directory
