@@ -17,7 +17,44 @@ function uuc_add_content() {
 	DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds ";
 	FinishMessage = "It is finally here!";
 	</script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 	<?php
+	echo '<script src="' . plugin_dir_url(__FILE__) . 'js/base.js"></script>';
+	echo '<script src="' . plugin_dir_url(__FILE__) . 'js/flipclock.js"></script>';
+	echo '<script src="' . plugin_dir_url(__FILE__) . 'js/dailycounter.js"></script>';
+	echo '<link rel="stylesheet" href="' . plugin_dir_url(__FILE__) . 'css/flipclock.css">'
+	?> 
+
+	<script type="text/javascript">
+		var clock;
+
+		$(document).ready(function() {
+
+			// Grab the current date
+			var currentDate = new Date();
+			var utccurrentDate = new Date(currentDate.getTime() + currentDate.getTimezoneOffset() * 60000);
+
+			// Set some date in the future. In this case, it's always Jan 1
+			var selecteddate  = new Date('<?php echo $uuc_options['cdyear'], ', ', $uuc_options['cdmonth'], ', ', $uuc_options['cdday']; ?>');
+
+			// Calculate the difference in seconds between the future and current date
+			var diff = selecteddate.getTime() / 1000 - utccurrentDate.getTime() / 1000;
+
+			// Instantiate a coutdown FlipClock
+			clock = $('.clock').FlipClock(diff, {
+				clockFace: 'DailyCounter',
+				countdown: true
+			});
+		});	
+	</script>	
+	<?php
+
+	if(isset($uuc_options['cdday'])){
+		$entereddate = ($uuc_options['cdyear'] . "-" . $uuc_options['cdmonth'] . "-" . $uuc_options['cdday'] . " " . "00:00:00");
+		$cddates = strtotime($entereddate);
+	}
 
 	if(!is_admin() && !is_user_logged_in() && $uuc_options['enable'] == true && $uuc_options['holdingpage_type'] == "htmlblock"){
 		
@@ -63,13 +100,27 @@ function uuc_add_content() {
 		if(isset($uuc_options['holding_message'])) {
 			$html .= '<h2>' . $uuc_options['holding_message'] . '</h2>';
 		}
-		if(isset($uuc_options['cdmonth'])) {
-		$html .= '<h3>' . '<script src="http://www.morrowmedia.co.uk/scripts/countdown.js" language="JavaScript" type="text/JavaScript"></script>' . ' ' . $uuc_options['cdtext'] . '<h3>';
+
+		if($uuc_options['cdenable'] == true){
+
+			if($uuc_options['cd_style'] == "flipclock"){
+				$html .= '<div class="cddiv"><div class="clock" style="margin:2em;"></div></div>';
+			}
+			elseif($uuc_options['cd_style'] == "textclock"){
+				if($cddates > time()){
+					$htmlpart = '<h3>' . '<script src="' . plugin_dir_url(__FILE__) . 'js/countdown.js" language="JavaScript" type="text/JavaScript"></script>';
+					$htmlpart .= ' ' . $uuc_options['cdtext'] . '</h3>';
+				}
+				else{
+					$htmlpart = '<h3>' . '<script src="' . plugin_dir_url(__FILE__) . 'js/countdown.js" language="JavaScript" type="text/JavaScript"></script>'; 
+					$htmlpart .= '</h3>';
+				}
+			}
+			$html .= $htmlpart;
 		}
 		$html .= '</div>';
 		echo $html; 
-		?> 
-		<span id="countdown"></span>
+		?>
 		<?php exit;
 	}
 }

@@ -48,6 +48,14 @@ function uuc_options_page() {
 
 				<h4 class="uuc-title"><?php _e('Countdown Timer', 'uuc_domain'); ?></h4>
 				<p>
+					<input id="uuc_settings[cdenable]" name="uuc_settings[cdenable]" type="checkbox" value="1" <?php checked('1', $uuc_options['cdenable']); ?>/>
+					<label class="description" for="uuc_settings[cdenable]"><?php _e('Enable the Countdown Timer?','uuc_domain'); ?></label>
+					<br />
+					<br />
+					<label><input type="radio" name="uuc_settings[cd_style]" id="flipclock" value="flipclock"<?php if(!isset($uuc_options['cd_style'])){ ?> checked <?php } else { checked( 'flipclock' == $uuc_options['cd_style'] ); } ?> /> Flip Clock / </label> 
+					<label><input type="radio" name="uuc_settings[cd_style]" id="textclock" value="textclock"<?php checked( 'textclock' == $uuc_options['cd_style'] ); ?> /> Text only.</label>
+					<br />
+					<br />
 					<input id="uuc_settings[cdday]" name="uuc_settings[cdday]" type="text" value="<?php echo $uuc_options['cdday']; ?>"/>
 					<label class="description" for="uuc_settings[cdday]"><?php _e('Enter the Date - e.g. 14', 'uuc_domain'); ?></label>
 					<br />

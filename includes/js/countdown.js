@@ -63,9 +63,10 @@ var SetTimeOutPeriod = (Math.abs(CountStepper)-1)*1000 + 990;
 putspan();
 var dthen = new Date(TargetDate);
 var dnow = new Date();
+var utcdnow = new Date(dnow.getTime() + dnow.getTimezoneOffset() * 60000);
 if(CountStepper>0)
-  ddiff = new Date(dnow-dthen);
+  ddiff = new Date(utcdnow-dthen);
 else
-  ddiff = new Date(dthen-dnow);
+  ddiff = new Date(dthen-utcdnow);
 gsecs = Math.floor(ddiff.valueOf()/1000);
 CountBack(gsecs);

@@ -3,8 +3,8 @@ Contributors: Morrowmedia
 Donate link: http://www.morrowmedia.co.uk/plugins.html
 Tags: Under construction, holding page, construction, holding, page, private, preview, coming soon
 Requires at least: 3.0.1
-Tested up to: 3.5
-Stable tag: 1.0
+Tested up to: 3.8.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,9 +28,14 @@ This Under Construction plugin allows for many levels of customisation, with mil
 == Changelog ==
 = 1.0 =
 * Newly Created plugin
+= 1.1 = 
+* Added in FlipClock countdown choice
+* Added functionality to switch off countdown entirely
+* Fixed the countdown completion text
+* General tidying up of the countdown javascript
 
 == Upgrade Notice ==
-Newly Created plugin
+A lot of work towards fixing issues with/Adding new features for the current Countdown timer.
 
 == Frequently Asked Questions ==
 If you have any questions please feel free to contact me via www.morrowmedia.co.uk
