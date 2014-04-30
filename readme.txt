@@ -3,8 +3,8 @@ Contributors: Morrowmedia
 Donate link: http://www.morrowmedia.co.uk/plugins.html
 Tags: Under construction, holding page, construction, holding, page, private, preview, coming soon
 Requires at least: 3.0.1
-Tested up to: 3.8.0
-Stable tag: 1.1
+Tested up to: 3.9.0
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,9 +33,12 @@ This Under Construction plugin allows for many levels of customisation, with mil
 * Added functionality to switch off countdown entirely
 * Fixed the countdown completion text
 * General tidying up of the countdown javascript
+= 1.2 =
+* Plugin tested and working with Wordpress 3.9
+* Updated images
 
 == Upgrade Notice ==
-A lot of work towards fixing issues with/Adding new features for the current Countdown timer.
+Making sure every feature works in Wordpress 3.9 and tidying up a few images where needed
 
 == Frequently Asked Questions ==
 If you have any questions please feel free to contact me via www.morrowmedia.co.uk
