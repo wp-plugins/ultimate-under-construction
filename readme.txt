@@ -41,4 +41,11 @@ This Under Construction plugin allows for many levels of customisation, with mil
 Making sure every feature works in Wordpress 3.9 and tidying up a few images where needed
 
 == Frequently Asked Questions ==
+
+Q. What is the HTML for the Countdown
+A. The HTML for the Flipclock Countdown is below -
+	<div class="cddiv"><div class="clock" style="margin:2em;"></div></div>
+and the HTML for the text based countdown is as follows - 
+	<h3><script src="http://www.morrowmedia.co.uk/scripts/countdown.js" language="JavaScript" type="text/JavaScript"></script></h3>
+
 If you have any questions please feel free to contact me via www.morrowmedia.co.uk
