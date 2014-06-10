@@ -4,7 +4,7 @@ Donate link: http://www.morrowmedia.co.uk/plugins.html
 Tags: Under construction, holding page, construction, holding, page, private, preview, coming soon
 Requires at least: 3.0.1
 Tested up to: 3.9.0
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,16 +36,16 @@ This Under Construction plugin allows for many levels of customisation, with mil
 = 1.2 =
 * Plugin tested and working with Wordpress 3.9
 * Updated images
+= 1.3 =
+* Javascript issue that was conflicting with other plugins/themes has been fixed.
 
 == Upgrade Notice ==
 Making sure every feature works in Wordpress 3.9 and tidying up a few images where needed
 
 == Frequently Asked Questions ==
 
-Q. What is the HTML for the Countdown
-A. The HTML for the Flipclock Countdown is below -
-	<div class="cddiv"><div class="clock" style="margin:2em;"></div></div>
-and the HTML for the text based countdown is as follows - 
-	<h3><script src="http://www.morrowmedia.co.uk/scripts/countdown.js" language="JavaScript" type="text/JavaScript"></script></h3>
+Q. When you plugin is active it kills my Theme Options page.
+A. This was due to an oversight in the UUC-Script.js file. This has been fixed and updating to the most recent version of my plugin should fix the issue.
 
-If you have any questions please feel free to contact me via www.morrowmedia.co.uk
+
+If you have any other questions please feel free to contact me via www.morrowmedia.co.uk

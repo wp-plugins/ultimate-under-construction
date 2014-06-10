@@ -24,7 +24,8 @@ function uuc_add_content() {
 	echo '<script src="' . plugin_dir_url(__FILE__) . 'js/base.js"></script>';
 	echo '<script src="' . plugin_dir_url(__FILE__) . 'js/flipclock.js"></script>';
 	echo '<script src="' . plugin_dir_url(__FILE__) . 'js/dailycounter.js"></script>';
-	echo '<link rel="stylesheet" href="' . plugin_dir_url(__FILE__) . 'css/flipclock.css">'
+	echo '<link rel="stylesheet" href="' . plugin_dir_url(__FILE__) . 'css/flipclock.css">';
+	$html = '';
 	?> 
 
 	<script type="text/javascript">
