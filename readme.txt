@@ -4,7 +4,7 @@ Donate link: http://www.morrowmedia.co.uk/plugins.html
 Tags: Under construction, holding page, construction, holding, page, private, preview, coming soon
 Requires at least: 3.0.1
 Tested up to: 3.9.0
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,9 @@ This Under Construction plugin allows for many levels of customisation, with mil
 * Updated images
 = 1.3 =
 * Javascript issue that was conflicting with other plugins/themes has been fixed.
+= 1.4 =
+* Fixed FlipClock error on IE and iOS.
+* Tidied up some unwanted warnings with newest version of WordPress.
 
 == Upgrade Notice ==
 Making sure every feature works in Wordpress 3.9 and tidying up a few images where needed
