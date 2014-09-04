@@ -52,7 +52,7 @@ Making sure every feature works in Wordpress 3.9 and tidying up a few images whe
 
 == Frequently Asked Questions ==
 
-= When you plugin is active it kills my Theme Options page. =
+= When the plugin is active it kills my Theme Options page. =
 
 This was due to an oversight in the UUC-Script.js file. This has been fixed and updating to the most recent version of my plugin should fix the issue.
 
