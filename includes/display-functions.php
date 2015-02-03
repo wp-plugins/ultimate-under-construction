@@ -39,7 +39,6 @@ function uuc_add_content() {
 		echo '<script src="' . plugin_dir_url(__FILE__) . 'js/base.js"></script>';
 		echo '<script src="' . plugin_dir_url(__FILE__) . 'js/flipclock.js"></script>';
 		echo '<script src="' . plugin_dir_url(__FILE__) . 'js/dailycounter.js"></script>';
-		echo '<script src="' . plugin_dir_url(__FILE__) . 'js/flipclock.min.js"></script>';
 		echo '<link rel="stylesheet" href="' . plugin_dir_url(__FILE__) . 'css/flipclock.css">';
 		$html = '';
 		?> 
@@ -51,7 +50,6 @@ function uuc_add_content() {
 
 				// Grab the current date
 				var currentDate = new Date();
-				var utccurrentDate = new Date(currentDate.getTime() + currentDate.getTimezoneOffset() * 60000);
 
 				// Set some date in the future.
 				var selecteddate  = new Date("<?php echo $uuc_options['cdyear'], '/', $uuc_options['cdmonth'], '/', $uuc_options['cdday']; ?>");

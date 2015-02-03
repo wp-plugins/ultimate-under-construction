@@ -3,8 +3,8 @@ Contributors: Morrowmedia
 Donate link: http://www.morrowmedia.co.uk/plugins.html
 Tags: Under construction, holding page, construction, holding, page, private, preview, coming soon
 Requires at least: 3.0.1
-Tested up to: 3.9.2
-Stable tag: 1.5
+Tested up to: 4.1
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,9 +46,13 @@ This Under Construction plugin allows for many levels of customisation, with mil
 * Fixed errors caused not variables not being set.
 * Removed meta tags/header information when Under Construction page is not active.
 * Preparing for WordPress 4.0
+= 1.6 =
+* Testing up to WordPress 4.1
+* Front end Tidy-up (including Thumbnail)
+* FlipClock no longer sticks to UTC.
 
 == Upgrade Notice ==
-Making sure every feature works in Wordpress 3.9 and tidying up a few images where needed
+Making sure every feature works in Wordpress 4.1 and tidying up a few images where needed
 
 == Frequently Asked Questions ==
 
@@ -59,6 +63,10 @@ This was due to an oversight in the UUC-Script.js file. This has been fixed and 
 = How do I log in once I have activated the Under Construction page? = 
 
 You will need to navigate directly to the wp-login page. To do this navigate to www.yoursite.com/wp-login.php.
+
+= When I deactivate the plugin it doesn't turn off? =
+
+This will be a caching issue.
 
 
 
