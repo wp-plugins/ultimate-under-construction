@@ -5,7 +5,7 @@ Plugin URI: http://www.morrowmedia.co.uk/plugins.html
 Description: Once Active this will replace your Wordpress site with a customizable Under Construction holding page. Admins will still be able to log in and see the original site.
 Author: Morrowmedia
 Author URI: http://www.morrowmedia.co.uk/
-Version: 1.6
+Version: 1.7
 */
 
 /*

@@ -55,7 +55,7 @@ function uuc_add_content() {
 				var selecteddate  = new Date("<?php echo $uuc_options['cdyear'], '/', $uuc_options['cdmonth'], '/', $uuc_options['cdday']; ?>");
 
 				// Calculate the difference in seconds between the future and current date
-				var diff1 = selecteddate.getTime() / 1000 - utccurrentDate.getTime() / 1000;
+				var diff1 = selecteddate.getTime() / 1000 - currentDate.getTime() / 1000;
 
 				var diff = (diff1 <= 0) ? "0": diff1;
 
