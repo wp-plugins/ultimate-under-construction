@@ -168,7 +168,7 @@ function uuc_options_page() {
 
 function admin_register_head() {
     $siteurl = get_option('siteurl');
-    $url = $siteurl . '/wp-content/plugins/' . basename(dirname(__FILE__)) . 'css/plugin_styles.css';
+    $url = $siteurl . '/wp-content/plugins/ultimate-under-construction/includes/css/plugin_styles.css';
     echo "<link rel='stylesheet' type='text/css' href='$url' />\n";
 }
 add_action('admin_head', 'admin_register_head');
