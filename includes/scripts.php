@@ -22,7 +22,6 @@ function uuc_load_scripts() {
 
 function uuc_admin_enqueue_scripts_cp() {
     wp_enqueue_script( 'wp-color-picker' );
-    // load the minified version of custom script
     wp_enqueue_script( 'uuc-custom', plugin_dir_url(__FILE__) . 'js/uuc-script.js', array( 'jquery', 'wp-color-picker' ), '1.1', true );
     wp_enqueue_style( 'wp-color-picker' );
 }

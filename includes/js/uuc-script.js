@@ -7,8 +7,8 @@
         $('#background-color').val(color);
     }
     function toggle_text() {
-        background_color = $('#background-color');
-        if ('' === background_color.val().replace('#', '')) {
+        var background_color = $('#background-color');
+        if(background_color.val() == undefined || '' === background_color.val().replace('#', '')) {
             background_color.val(default_color);
             pickColor(default_color);
         } else {

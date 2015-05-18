@@ -3,8 +3,8 @@ Contributors: Morrowmedia
 Donate link: http://www.morrowmedia.co.uk/plugins.html
 Tags: Under construction, holding page, construction, holding, page, private, preview, coming soon
 Requires at least: 3.0.1
-Tested up to: 4.1.1
-Stable tag: 1.8
+Tested up to: 4.2.2
+Stable tag: 1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,13 @@ This Under Construction plugin allows for many levels of customisation, with mil
 * FlipClock no longer sticks to UTC.
 = 1.7 = 
 * Fixed issue with FlipClock.min.js causing FlipClock to not load
+= 1.8 =
+* Altering CSS
+* Fixing JS Colour Picker.
+= 1.9 =
+* Javascript Fix.
+* Adding new Committer.
+* New Images.
 
 == Upgrade Notice ==
 Please Upgrade - FlipClock doesn't load reliably on v1.6 - Issue has been fixed on 1.7
