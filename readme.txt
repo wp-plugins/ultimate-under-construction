@@ -1,6 +1,5 @@
 === Ultimate Under Construction ===
-Contributors: Morrowmedia
-Donate link: http://www.morrowmedia.co.uk/plugins.html
+Contributors: HappyKite, Morrowmedia
 Tags: Under construction, holding page, construction, holding, page, private, preview, coming soon
 Requires at least: 3.0.1
 Tested up to: 4.2.2
